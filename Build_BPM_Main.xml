@@ -1,0 +1,139 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+				 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+														 http://maven.apache.org/maven-v4_0_0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<parent>
+<groupId>tx.oag.cs.txcses</groupId>
+<artifactId>parent</artifactId>
+<version>02.00.00-SNAPSHOT</version>
+<relativePath>parent</relativePath>
+</parent>
+<groupId>tx.oag.cs.txcses</groupId>
+<artifactId>build_bpm_main</artifactId>
+<packaging>pom</packaging>
+<version>02.00.00-SNAPSHOT</version>
+<name>Build_BPM_T2</name>
+			 
+<modules>
+
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchCommon/ArchCommon</module>
+	
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchSvc/ArchIntegrationCommon</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchSvc/ArchDataAccess</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchSvc/ArchEntitiesCommon</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchSvc/ArchPersistenceInterface</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchSvc/ArchWebServiceCommon</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchSvc/ArchIntegrationServiceInterface</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchSvc/ArchbusinessServiceInterface</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchSvc/ArchFacadeServiceInterface</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchSvc/ArchWebServiceClient</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchSvc/ArchIntegrationServiceImpl</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchSvc/ArchPersistenceImpl</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchSvc/ArchBusinessServiceImpl</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchSvc/ArchFacadeServiceImpl</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchSvc/ArchWebService</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchBatch/ArchBatch</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchBatch/ArchBatchServant</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchPortal/PrimefacesExt</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchPortal/ArchPortalUtils</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchPortal/ArchPortalCommon</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchPortal/T2Portal8Theme</module>
+	<module>T2_SrcCd_Main_Dev/t2_arch_code/ArchPortal/T2Portal8ThemeEAR</module>
+	 
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/Utilities/T2Common</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/Utilities/T2BatchCommon</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/Utilities/T2PortalCommon</module>
+	
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/Common/T2IntegrationCommon</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/Common/T2Utils</module>
+
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/EntitiesCommon/EntitiesCommon</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/LinkResolver/T2LinkResolverPlugin</module>
+    <module>T2_SrcCd_Main_Dev/t2_sw_code/LinkResolver/T2LinkResolverEAR</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/CaseMgmt/CaseManagementCaseInformationPortal</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/CaseCommon/AddressPortal</module>
+	<!--<module>T2_SrcCd_Main_Dev/t2_sw_code/CaseMgmt/CaseManagementMemberDemographicsPortal</module>-->
+	
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/CaseSvc/CaseBusinessServiceImpl</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/CaseSvc/CaseBusinessServiceInterface</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/CaseSvc/CaseFacadeServiceImpl</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/CaseSvc/CaseFacadeServiceInterface</module>
+	
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/CaseSvc/CasePersistenceImpl</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/CaseSvc/CasePersistenceInterface</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/CaseSvc/CaseWebServiceClient</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/CaseSvc/CaseIntegrationServiceInterface</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/CaseSvc/CaseIntegrationServiceImpl</module>
+	
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/LegalCommon/LegalPortalCommon</module>
+	
+	
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/LegalSvc/LegalBusinessServicesImpl</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/LegalSvc/LegalBusinessServicesInterface</module>
+	
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/LegalSvc/LegalFacadeServicesImpl</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/LegalSvc/LegalFacadeServicesInterface</module>
+	
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/LegalSvc/LegalPersistenceImpl</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/LegalSvc/LegalPersistenceInterface</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/LegalSvc/LegalWebServiceClient</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/Utilities/UtilitiesFacadeServiceImpl</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/Utilities/UtilitiesFacadeServiceInterface</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/Utilities/UtilitiesBusinessServiceImpl</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/Utilities/UtilitiesBusinessServiceInterface</module>
+
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/OfficeDefault/OfficeDefaultPortal</module>
+	
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/Utilities/UtilitiesPersistenceImpl</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/Utilities/UtilitiesPersistenceInterface</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/CaseCommon/CaseWebUtils</module>
+	
+
+	
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/Utilities/UtilitiesWebServiceClient</module>
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/Utilities/UtilitiesWebService</module>
+	
+	<module>T2_SrcCd_Main_Dev/t2_sw_code/CaseSvc/CaseBatch</module>
+	
+	
+
+
+<module>T2_SrcCd_Main_Dev/t2_sw_code/LocalDeploy/T2ServicesEAR</module> 
+<module>T2_SrcCd_Main_Dev/t2_sw_code/LocalDeploy/T2BatchEAR</module>
+
+
+
+
+
+
+
+</modules>
+
+<build>
+		<plugins>
+
+<plugin>
+	<artifactId>maven-clean-plugin</artifactId>
+	<configuration>
+		<excludeDefaultDirectories>true</excludeDefaultDirectories>
+		<filesets>
+			
+			<fileset>
+				<directory>target</directory>
+				<includes>
+					<include>**/*</include>
+				</includes>
+				<excludes>
+				<exclude>surefire-reports/**/*</exclude>
+				<exclude>jacoco.exec</exclude>
+				<exclude>sonar/**/*</exclude>
+				</excludes>
+			</fileset>
+		</filesets>
+	</configuration>	
+	</plugin>
+	
+	</plugins>
+	</build>
+</project>
